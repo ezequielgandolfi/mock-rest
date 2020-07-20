@@ -1,0 +1,80 @@
+{
+    "get": [
+        {
+            "path": "[\\w\\W]+",
+            "type": "object",
+            "model": "casual",
+            "status": 200
+        },
+        {
+            "path": "",
+            "type": "array",
+            "model": "casual",
+            "total": 30,
+            "status": 200
+        }
+    ],
+    "model": {
+        "casual": {
+            "sentence": "sentence",
+            "title": "title",
+            "text": "text",
+            "description": "description",
+            "short_description": "short_description",
+            "string": "string",
+            "word": "word",
+            "words": "words;3",
+            "letter": "letter",
+
+            "random": "random",
+            "integer": "integer;100;99999",
+            "double": "double;-50;50",
+            "boolean": "boolean",
+            "uuid": "uuid",
+
+            "date": "date",
+            "time": "time",
+
+            "random_letter": ["A","B","C"],
+            "random_number": [1,2,3],
+
+            "$person": "object;person",
+            "$addresses": "array;address;2"
+            
+        },
+        "person": {
+            "name": "name",
+            "username": "username",
+            "first_name": "first_name",
+            "last_name": "last_name",
+            "full_name": "full_name",
+            "password": "password",
+            "name_prefix": "name_prefix",
+            "name_suffix": "name_suffix",
+            "company_name": "company_name",
+            "company_suffix": "company_suffix",
+            "catch_phrase": "catch_phrase",
+            "phone": "phone",
+            "email": "email",
+            "cpf": "cpf",
+            "cnpj": "cnpj",
+            "cei": "cei",
+            "cns": "cns",
+            "pis": "pis"
+        },
+        "address": {
+            "country": "country",
+            "city": "city",
+            "street": "street",
+            "address": "address",
+            "address1": "address1",
+            "address2": "address2",
+            "zip": "zip",
+            "state": "state",
+            "state_abbr": "state_abbr",
+            "latitude": "latitude",
+            "longitude": "longitude",
+            "building_number": "building_number"
+        }
+    }
+}
